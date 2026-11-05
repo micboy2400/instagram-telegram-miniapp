@@ -1,0 +1,7 @@
+# Replace hostname and email. Caddy obtains and renews public TLS certificates.
+{
+    email admin@example.com
+}
+miniapp.example.com {
+    reverse_proxy 127.0.0.1:3000
+}
